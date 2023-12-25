@@ -15,14 +15,19 @@ function submit(){
 
    function checkthala(input,length){
     let result=document.getElementById("result")
+    let video = document.getElementById("myVideo")
+    
     if(length===7){
        result.innerText=(input+" is thala for a reason")
        result.style.display="block"
-       document.getElementById("myVideo").style.display="inline"
+       video.style.display="inline"
+       video.volume=0.1
+       video.play()
     }else{
         result.innerText=(input+" is not thala for a reason")
        result.style.display="block"
-       document.getElementById("myVideo").style.display="none"
+       video.style.display="none"
+       video.pause()
     }
    }
 }
