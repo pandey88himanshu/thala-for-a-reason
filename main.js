@@ -18,9 +18,11 @@ function submit(){
     if(length===7){
        result.innerText=(input+" is thala for a reason")
        result.style.display="block"
+       document.getElementById("myVideo").style.display="inline"
     }else{
         result.innerText=(input+" is not thala for a reason")
        result.style.display="block"
+       document.getElementById("myVideo").style.display="none"
     }
    }
 }
