@@ -1,14 +1,84 @@
-div{
-    text-align: center;
-    height: 100%;
-    width: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Gothic+A1:wght@500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,200;1,500&family=Ubuntu:wght@500;700&display=swap');
+
+body{
+    background-color: #EEF5FF;
 }
 #result{
     display: none;
-    
+    color: #176B87;
+    font-family: 'Poppins';
+    font-weight: 700;
 }
 
 video{
     display:none;
 }
 
+#bg{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.inputbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#input{
+    text-align: center;
+    font-family: 'Poppins';
+    padding: 10px;
+    border: none;
+    font-weight: 500;
+    margin: 15px;
+    outline: none;
+    background-color: #176B87;
+    color: #EEF5FF;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+button{
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #176B87;
+    color: #EEF5FF;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.hide{
+    display: none;
+}
+.view{
+    display: block;
+}
+
+#t1{
+    font-family: 'Poppins';
+    font-weight: 900;
+    color: #176B87;
+}
+
+::placeholder {
+    font-family: 'Poppins';
+    color: #EEF5FF;
+    font-weight: 300;
+  }

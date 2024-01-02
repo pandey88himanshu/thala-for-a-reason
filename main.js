@@ -1,3 +1,9 @@
+let t1 = document.getElementById('t1')
+let t2 = document.getElementById('t2')
+let t3 = document.getElementById("t3")
+t3.addEventListener('click',()=>{
+    location.reload();
+})
 function submit(){
     let input=document.getElementById("input").value
     let inputsplit=input.split("");
@@ -21,12 +27,18 @@ function submit(){
        result.innerText=(input+" is thala for a reason")
        result.style.display="block"
        video.style.display="inline"
+       t1.classList.toggle("hide")
+       t2.classList.toggle("hide")
+       t3.classList.toggle('view')
        video.volume=0.1
        video.play()
     }else{
         result.innerText=(input+" is not thala for a reason")
        result.style.display="block"
        video.style.display="none"
+       t1.classList.toggle("hide")
+       t2.classList.toggle("hide")
+       t3.classList.toggle('view')
        video.pause()
     }
    }
